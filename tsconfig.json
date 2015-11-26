@@ -1,0 +1,15 @@
+{
+    "version": "1.6.2",
+    "compilerOptions": {
+        "target": "es5",
+        "outDir": "lib",
+        "sourceMap": true,
+        "declaration": true,
+        "module": "commonjs",
+        "removeComments": true
+    },
+    "files": [
+        "./src/index.ts",
+        "./src/test.ts"
+    ]
+}

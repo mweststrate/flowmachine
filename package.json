@@ -1,0 +1,42 @@
+{
+  "name": "flowmachine",
+  "version": "0.1.0",
+  "description": "State machine inspired (asynchronous) control flow library",
+  "main": "lib/index.js",
+  "typings": "lib/index",
+  "scripts": {
+    "test": "npm run build && tape lib/test.js",
+    "test-travis": "npm run build && istanbul cover tape lib/test.js",
+    "coverage": "npm run build && istanbul cover tape lib/test.js && cat ./coverage/lcov.info|coveralls",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mweststrate/flowmachine.git"
+  },
+  "keywords": [
+    "async",
+    "control flow",
+    "state machine"
+  ],
+  "author": "Michel Weststrate",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mweststrate/flowmachine/issues"
+  },
+  "homepage": "https://github.com/mweststrate/flowmachine#readme",
+  "dependencies": {
+    "map-limit": "0.0.1"
+  },
+  "files": [
+    "lib/",
+    "LICENSE",
+    "README.md"
+  ],
+  "devDependencies": {
+    "coveralls": "^2.11.4",
+    "istanbul": "^0.4.1",
+    "tape": "^4.2.2",
+    "typescript": "^1.6.2"
+  }
+}
